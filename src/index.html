@@ -2,27 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NFT preview card component</title>
 </head>
 <body>
   <main>
-    <article>
+    <article class="nft-card">
       <figure>
-        <img src="" alt="">
+        <img class="nft-card__image" src="" alt="NFT Image">
       </figure>
       <section>
-        <h1>Equilibrium #3429</h1>
-        <p>Our Equilibrium collection promotes balance and calm.</p>
+        <h1 class="nft-card__title">Equilibrium #3429</h1>
+        <p class="nft-card__description">Our Equilibrium collection promotes balance and calm.</p>
       </section>
       <section>
-        <span>0.041 ETH</span>
-        <p>3 days left</p>
+        <span class="nft-card__price">
+          <img class="nft-card__eth-icon" src="" alt="ETH icon">
+          <data value="0.041" class="nft-card__price-value">0.041 ETH</data>
+        </span>
+        <span class="nft-card__time-left">
+          <img class="nft-card__time-icon" src="" alt="time icon">
+          <time class="nft-card__time-value">3 days left</time>
+        </span>
       </section>
       <footer>
-        <img src="" alt="">
-        <p>Creation of Jules Wyvern</p>
+        <img class="nft-card__creator-picture" src="" alt="Creator's picture">
+        <p class="nft-card__created-by">Creation of <a class="nft-card__creator-name" href="">Jules Wyvern</a></p>
       </footer>
     </article>
   </main>
