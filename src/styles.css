@@ -36,16 +36,45 @@ main {
   border-radius: 3%;
 }
 
+.nft-card__image-container {
+  margin: 25px;
+  cursor: pointer;
+  position: relative;
+}
+
+.nft-card__image-background {
+  width: 100%;
+  content: "";
+  top: 0;
+  height: 99%;
+  background: var(--secundary-color);
+  transition: transform 0.2s ease-in-out, opacity 0.4s ease-in-out;
+  pointer-events: none;
+  border-radius: 3%;
+}
+
+.nft-card__icon-view {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.2s ease-in-out, opacity 0.4s ease-in-out;
+}
+
+.nft-card__image--hover {
+  position: absolute;
+  opacity: 0;
+}
+
 .nft-card__image {
   max-width: 250px;
   border-radius: 3%;
-  margin: 25px;
-  cursor: pointer;
-  transition: 0.3s ease;
 }
 
-.nft-card__image:hover {
-  filter: sepia(1) hue-rotate(180deg) saturate(5);
+.nft-card__image-container:hover .nft-card__image-background {
+  opacity: 0.5;
+}
+.nft-card__image-container:hover .nft-card__icon-view {
+  opacity: 1;
 }
 
 .nft-card__title {
